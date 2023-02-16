@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nom');
             $table->date('date_naissqance');
             $table->binary('image');
-            $table->foreign('id_band')->references('id_band')->on('bande')->onDelete('cascade');
+            // $table->foreign('id_band')->references('id_band')->on('bande')->onDelete('cascade');
             $table->timestamps();
         });
     }
